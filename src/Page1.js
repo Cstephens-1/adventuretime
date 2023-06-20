@@ -7,26 +7,13 @@ import StatsWindow from "./StatsWindow";
 
 
 
+
 export default function Page1(){
 
-    const [characterContext, setCharacterContext] = useCharacterContext()
+    const [characterContext] = useCharacterContext()
     const [enemyContext, setEnemyContext] = useEnemyContext();
     const [statsWindowOpen]= useStatsWindow()
     const navigate=useNavigate()
-
-    //user can open and close their persona/inventory
-    // useEffect(()=>{
-    //     const handleKeyPress= (event)=>{
-    //         if(event.key === 'p' || event.key === "P"){
-    //             setStatsWindowOpen((prevState)=> !prevState)
-    //         }
-    //     }
-    //     window.addEventListener("keydown", handleKeyPress)
-
-    //     return()=>{
-    //         window.removeEventListener("keydown", handleKeyPress)
-    //     }
-    // })
 
     //create an enemy to test combat
     const Goblin={
